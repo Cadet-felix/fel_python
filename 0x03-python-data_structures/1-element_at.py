@@ -11,9 +11,7 @@ def element_at(my_list, idx):
         The return value. None
     """
     num = len(my_list) - 1
-    if idx < 0:
+
+    if idx < 0 or idx > num:
         return
-    elif idx > num:
-        return
-    else:
-        return my_list[idx]
+    return my_list[idx]
